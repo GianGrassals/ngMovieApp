@@ -1,0 +1,34 @@
+<div class="row d-flex justify-content-center mt-4" *ngIf="loading" >
+  <div class="spinner-grow text-primary spinnerColor" >
+  </div>
+  <div class="spinner-grow text-primary spinnerColor" >
+  </div>
+  <div class="spinner-grow text-primary spinnerColor" >
+  </div>
+</div>
+<div  class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card mb-3" style="width: 45rem; margin: 0 auto">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img [src]="imgUrl" class="card-img-top">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item"><strong>{{selectMovie.title}}</strong></li>
+              <li class="list-group-item"><strong>Release:</strong> {{selectMovie.release_date}}</li>
+              <li class="list-group-item"><span><strong>Overview:</strong></span> {{selectMovie.overview}}</li>
+              <button class="btn btn-primary btn-block btn-xl mt-4" routerLink="/dashboard">
+                GO BACK
+              </button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
